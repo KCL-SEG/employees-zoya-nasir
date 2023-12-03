@@ -41,7 +41,7 @@ class Employee:
         elif self.commission_type == "Contract":
             commission_str += f"and receives a commission for {self.contracts_landed} contract(s) at {self.commission_amount}/contract"
 
-        return f"{contract_str}{commission_str}.Their total pay is {self.get_pay()}."
+        return f"{contract_str}{commission_str}. Their total pay is {self.get_pay()}."
 
 
 billie = Employee('Billie', 'Salary', 4000)
