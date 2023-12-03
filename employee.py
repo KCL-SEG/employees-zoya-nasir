@@ -37,7 +37,7 @@ class Employee:
 
         commission_str = ""
         if self.commission_type == "Bonus":
-            commission_str += f"and receives a bonus commission of {self.commission_amount}. "
+            commission_str += f"and receives a bonus commission of {self.commission_amount} "
         elif self.commission_type == "Contract":
             commission_str += f"and receives a commission for {self.contracts_landed} contract(s) at {self.commission_amount}/contract. "
 
