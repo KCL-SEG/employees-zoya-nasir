@@ -33,13 +33,13 @@ class Employee:
         if self.contract_type == "Salary":
             contract_str += f"monthly salary of {self.wage_or_salary}. "
         elif self.contract_type == "Hourly":
-            contract_str += f"contract of {self.hours_worked} hours at {self.wage_or_salary}/hour. "
+            contract_str += f"contract of {self.hours_worked} hours at {self.wage_or_salary}/hour "
 
         commission_str = ""
         if self.commission_type == "Bonus":
-            commission_str += f"And receives a bonus commission of {self.commission_amount}. "
+            commission_str += f"and receives a bonus commission of {self.commission_amount}. "
         elif self.commission_type == "Contract":
-            commission_str += f"And receives a commission for {self.contracts_landed} contract(s) at {self.commission_amount}/contract. "
+            commission_str += f"and receives a commission for {self.contracts_landed} contract(s) at {self.commission_amount}/contract. "
 
         return f"{contract_str}{commission_str}Their total pay is {self.get_pay()}."
 
