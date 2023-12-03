@@ -31,9 +31,9 @@ class Employee:
     def __str__(self):
         contract_str = f"{self.name} works on a "
         if self.contract_type == "Salary":
-            contract_str += f"monthly salary of {self.wage_or_salary}. "
+            contract_str += f"monthly salary of {self.wage_or_salary} "
         elif self.contract_type == "Hourly":
-            contract_str += f"contract of {self.hours_worked} hours at {self.wage_or_salary}/hour. "
+            contract_str += f"contract of {self.hours_worked} hours at {self.wage_or_salary}/hour "
 
         commission_str = ""
         if self.commission_type == "Bonus":
@@ -41,7 +41,7 @@ class Employee:
         elif self.commission_type == "Contract":
             commission_str += f"and receives a commission for {self.contracts_landed} contract(s) at {self.commission_amount}/contract. "
 
-        return f"{contract_str}{commission_str}Their total pay is {self.get_pay()}."
+        return f"{contract_str}{commission_str}.Their total pay is {self.get_pay()}."
 
 
 billie = Employee('Billie', 'Salary', 4000)
